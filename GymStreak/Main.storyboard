@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Streak View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StreakViewController" customModule="GymStreak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L0c-hE-dmz">
+                                <rect key="frame" x="24" y="226.66666666666666" width="366" height="282.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Welcome to Gym Tracker 💪" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW2-01-dAU">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="95.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <color key="textColor" red="0.97647058823529409" green="0.792156862745098" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbV-n2-Bi6">
+                                        <rect key="frame" x="0.0" y="95.666666666666657" width="366" height="91"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="76"/>
+                                        <color key="textColor" red="0.97647058819999999" green="0.79215686269999996" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="times" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0X-ZX-BQm">
+                                        <rect key="frame" x="0.0" y="186.66666666666666" width="366" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <color key="textColor" red="0.97647058819999999" green="0.79215686269999996" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☹️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-0Y-5GM">
+                                        <rect key="frame" x="160.66666666666666" y="234.66666666666663" width="45" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nW2-01-dAU" secondAttribute="trailing" id="HFi-Md-JON"/>
+                                    <constraint firstAttribute="trailing" secondItem="vbV-n2-Bi6" secondAttribute="trailing" id="Hdc-YZ-nyK"/>
+                                    <constraint firstItem="vbV-n2-Bi6" firstAttribute="leading" secondItem="L0c-hE-dmz" secondAttribute="leading" id="T5n-hz-NgL"/>
+                                    <constraint firstItem="nW2-01-dAU" firstAttribute="leading" secondItem="L0c-hE-dmz" secondAttribute="leading" id="e1y-3I-DHq"/>
+                                    <constraint firstItem="E0X-ZX-BQm" firstAttribute="leading" secondItem="L0c-hE-dmz" secondAttribute="leading" id="edb-GL-7te"/>
+                                    <constraint firstAttribute="trailing" secondItem="E0X-ZX-BQm" secondAttribute="trailing" id="fjS-Cl-EfS"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYE-O0-CIu">
+                                <rect key="frame" x="285" y="44" width="105" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="8dw-2F-eSp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="OjE-CU-6KA"/>
+                                    <constraint firstAttribute="height" constant="25" id="nJw-Li-ufh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Add Gym" image="plus.app.fill" catalog="system">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.79215686269999996" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="18x-Up-8AH" kind="presentation" identifier="goToGymSelection" id="Vvm-bA-hkL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6K-Ce-oIX">
+                                <rect key="frame" x="24" y="553.33333333333337" width="366" height="23"/>
+                                <state key="normal" image="connectTo"/>
+                                <connections>
+                                    <action selector="signInWithFoursquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyi-CK-S5J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.066666666666666666" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="g6K-Ce-oIX" secondAttribute="trailing" id="Puf-wU-eEe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L0c-hE-dmz" secondAttribute="trailing" id="Q4E-BZ-hJt"/>
+                            <constraint firstItem="WYE-O0-CIu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="VRG-dW-CZ3"/>
+                            <constraint firstItem="g6K-Ce-oIX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y25-ie-js7"/>
+                            <constraint firstItem="L0c-hE-dmz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZYh-jZ-A3T"/>
+                            <constraint firstItem="L0c-hE-dmz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b5h-X5-a17"/>
+                            <constraint firstItem="g6K-Ce-oIX" firstAttribute="top" secondItem="L0c-hE-dmz" secondAttribute="bottom" constant="44" id="fFw-DI-8zM"/>
+                            <constraint firstAttribute="trailing" secondItem="WYE-O0-CIu" secondAttribute="trailing" constant="24" id="oJW-iv-Ljg"/>
+                            <constraint firstItem="L0c-hE-dmz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ouJ-TS-5sW"/>
+                        </constraints>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="24" leading="24" bottom="24" trailing="24"/>
+                        <viewLayoutGuide key="safeArea" id="N65-Ei-RcP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OFt-oA-SPP">
+                        <barButtonItem key="rightBarButtonItem" title="Add Gym" id="Hhp-6X-6Ig"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addGymButton" destination="WYE-O0-CIu" id="zqR-TF-c6B"/>
+                        <outlet property="connectToFoursquareButton" destination="g6K-Ce-oIX" id="emK-c5-7CN"/>
+                        <outlet property="emojiLabel" destination="v2g-0Y-5GM" id="2nF-T1-X2Y"/>
+                        <outlet property="timesLabel" destination="E0X-ZX-BQm" id="Y2D-K8-ixe"/>
+                        <outlet property="titleLabel" destination="nW2-01-dAU" id="Blm-au-Dhb"/>
+                        <outlet property="visitCountLabel" destination="vbV-n2-Bi6" id="SWj-Uc-i5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534.78260869565224" y="-161.41304347826087"/>
+        </scene>
+        <!--Gyms Table View Controller-->
+        <scene sceneID="sm0-QY-qd6">
+            <objects>
+                <tableViewController id="18x-Up-8AH" customClass="GymsTableViewController" customModule="GymStreak" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xxe-oJ-Q7g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Gym" id="Txd-w0-37g">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Txd-w0-37g" id="s8f-Ey-SOi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="18x-Up-8AH" id="Nr9-Jl-a6f"/>
+                            <outlet property="delegate" destination="18x-Up-8AH" id="fQE-Pl-RXd"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wk-ic-NmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="-161"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="connectTo" width="150" height="23"/>
+        <image name="plus.app.fill" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
