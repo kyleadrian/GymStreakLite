@@ -11,7 +11,7 @@ import UIKit
 
 protocol GeofenceManagerDelegate: AnyObject {
     func didSucceed(status: String)
-    func didFail(status: String)
+    func didFail(error: String)
 }
 
 class GeofenceManager {
@@ -32,11 +32,13 @@ class GeofenceManager {
         request.httpMethod = "POST"
         
         URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
-            if let res = response as? HTTPURLResponse {
-                if (200...299).contains(res.statusCode) {
+            if let data = data {
+                let apiResponse = try? JSONDecoder().decode(Welcome.self, from: data)
+                guard let statusCode = apiResponse?.meta?.code else { return }
+                if (200...299).contains(statusCode) {
                     self?.delegate?.didSucceed(status: "Success")
                 } else {
-                    self?.delegate?.didFail(status: "Error")
+                    self?.delegate?.didFail(error: "\(apiResponse?.meta?.errorDetail ?? "")")
                 }
             }
         }.resume()

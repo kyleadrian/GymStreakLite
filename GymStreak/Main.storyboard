@@ -16,28 +16,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L0c-hE-dmz">
-                                <rect key="frame" x="24" y="226.66666666666666" width="366" height="282.66666666666674"/>
+                                <rect key="frame" x="24" y="202.99999999999997" width="366" height="330.33333333333326"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Welcome to Gym Tracker 💪" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW2-01-dAU">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="95.666666666666671"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Welcome to Foursquare Gym Tracker 💪" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW2-01-dAU">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="143.33333333333334"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
                                         <color key="textColor" red="0.97647058823529409" green="0.792156862745098" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbV-n2-Bi6">
-                                        <rect key="frame" x="0.0" y="95.666666666666657" width="366" height="91"/>
+                                        <rect key="frame" x="0.0" y="143.33333333333331" width="366" height="91"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="76"/>
                                         <color key="textColor" red="0.97647058819999999" green="0.79215686269999996" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="times" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0X-ZX-BQm">
-                                        <rect key="frame" x="0.0" y="186.66666666666666" width="366" height="48"/>
+                                        <rect key="frame" x="0.0" y="234.33333333333331" width="366" height="48"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
                                         <color key="textColor" red="0.97647058819999999" green="0.79215686269999996" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☹️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-0Y-5GM">
-                                        <rect key="frame" x="160.66666666666666" y="234.66666666666663" width="45" height="48"/>
+                                        <rect key="frame" x="160.66666666666666" y="282.33333333333331" width="45" height="48"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6K-Ce-oIX">
-                                <rect key="frame" x="24" y="553.33333333333337" width="366" height="23"/>
+                                <rect key="frame" x="24" y="577.33333333333337" width="366" height="23"/>
                                 <state key="normal" image="connectTo"/>
                                 <connections>
                                     <action selector="signInWithFoursquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyi-CK-S5J"/>

@@ -26,10 +26,14 @@ import Foundation
 // MARK: - Meta
 struct Meta: Codable {
     let code: Int?
+    let errorType: String?
+    let errorDetail: String?
     let requestID: String?
 
     enum CodingKeys: String, CodingKey {
         case code
+        case errorType
+        case errorDetail
         case requestID = "requestId"
     }
 }

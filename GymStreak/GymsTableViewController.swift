@@ -66,9 +66,9 @@ class GymsTableViewController: UITableViewController, GeofenceManagerDelegate {
         }
     }
     
-    func didFail(status: String) {
+    func didFail(error: String) {
         DispatchQueue.main.async {
-            let ac = UIAlertController(title: "Gym Tracker", message: "\(status). Please try again later.", preferredStyle: .alert)
+            let ac = UIAlertController(title: "Gym Tracker", message: "\(error)", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Ok", style: .default))
             self.present(ac, animated: true)
         }
