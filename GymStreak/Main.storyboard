@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F5I-c9-8d7">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,21 +51,6 @@
                                     <constraint firstAttribute="trailing" secondItem="E0X-ZX-BQm" secondAttribute="trailing" id="fjS-Cl-EfS"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYE-O0-CIu">
-                                <rect key="frame" x="285" y="44" width="105" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="8dw-2F-eSp"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="OjE-CU-6KA"/>
-                                    <constraint firstAttribute="height" constant="25" id="nJw-Li-ufh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Add Gym" image="plus.app.fill" catalog="system">
-                                    <color key="titleColor" red="0.97647058819999999" green="0.79215686269999996" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="18x-Up-8AH" kind="presentation" identifier="goToGymSelection" id="Vvm-bA-hkL"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6K-Ce-oIX">
                                 <rect key="frame" x="24" y="577.33333333333337" width="366" height="23"/>
                                 <state key="normal" image="connectTo"/>
@@ -74,28 +58,39 @@
                                     <action selector="signInWithFoursquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyi-CK-S5J"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kc-Jj-wHM">
+                                <rect key="frame" x="287" y="24" width="103" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Add Gym" image="plus" catalog="system">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.79215686269999996" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="a22-CA-Itq" kind="show" id="8vm-Ds-lsn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.066666666666666666" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="3kc-Jj-wHM" secondAttribute="trailing" id="9mW-nt-oeM"/>
+                            <constraint firstItem="3kc-Jj-wHM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Mw6-i9-uB8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g6K-Ce-oIX" secondAttribute="trailing" id="Puf-wU-eEe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L0c-hE-dmz" secondAttribute="trailing" id="Q4E-BZ-hJt"/>
-                            <constraint firstItem="WYE-O0-CIu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="VRG-dW-CZ3"/>
                             <constraint firstItem="g6K-Ce-oIX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y25-ie-js7"/>
                             <constraint firstItem="L0c-hE-dmz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZYh-jZ-A3T"/>
                             <constraint firstItem="L0c-hE-dmz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b5h-X5-a17"/>
                             <constraint firstItem="g6K-Ce-oIX" firstAttribute="top" secondItem="L0c-hE-dmz" secondAttribute="bottom" constant="44" id="fFw-DI-8zM"/>
-                            <constraint firstAttribute="trailing" secondItem="WYE-O0-CIu" secondAttribute="trailing" constant="24" id="oJW-iv-Ljg"/>
                             <constraint firstItem="L0c-hE-dmz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ouJ-TS-5sW"/>
                         </constraints>
                         <directionalEdgeInsets key="directionalLayoutMargins" top="24" leading="24" bottom="24" trailing="24"/>
-                        <viewLayoutGuide key="safeArea" id="N65-Ei-RcP"/>
                     </view>
                     <navigationItem key="navigationItem" id="OFt-oA-SPP">
-                        <barButtonItem key="rightBarButtonItem" title="Add Gym" id="Hhp-6X-6Ig"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hhp-6X-6Ig">
+                            <color key="tintColor" red="0.97647058819999999" green="0.79215686269999996" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addGymButton" destination="WYE-O0-CIu" id="zqR-TF-c6B"/>
+                        <outlet property="addGymButton" destination="3kc-Jj-wHM" id="vwL-P8-sMd"/>
                         <outlet property="connectToFoursquareButton" destination="g6K-Ce-oIX" id="emK-c5-7CN"/>
                         <outlet property="emojiLabel" destination="v2g-0Y-5GM" id="2nF-T1-X2Y"/>
                         <outlet property="timesLabel" destination="E0X-ZX-BQm" id="Y2D-K8-ixe"/>
@@ -105,14 +100,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="534.78260869565224" y="-161.41304347826087"/>
+            <point key="canvasLocation" x="1442.0289855072465" y="-161.41304347826087"/>
         </scene>
-        <!--Gyms Table View Controller-->
+        <!--Select Gym-->
         <scene sceneID="sm0-QY-qd6">
             <objects>
                 <tableViewController id="18x-Up-8AH" customClass="GymsTableViewController" customModule="GymStreak" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xxe-oJ-Q7g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -130,14 +125,60 @@
                             <outlet property="delegate" destination="18x-Up-8AH" id="fQE-Pl-RXd"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Select Gym" id="uRi-jg-DCL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bjf-in-t19">
+                            <connections>
+                                <action selector="cancel:" destination="18x-Up-8AH" id="lAG-jD-i08"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wk-ic-NmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="-161"/>
+            <point key="canvasLocation" x="3236.2318840579715" y="-161.41304347826087"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jnb-mv-dUL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="light" navigationBarHidden="YES" id="F5I-c9-8d7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SCh-S4-TpC">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jfb-ur-QUj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Yis-GY-ScL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAD-Pn-sq0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534.78260869565224" y="-161.41304347826087"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oWZ-jW-GEo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a22-CA-Itq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="XqK-1i-x7S"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wem-a4-TTJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="18x-Up-8AH" kind="relationship" relationship="rootViewController" id="Nni-hZ-hvg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAQ-t4-EBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328.985507246377" y="-161.41304347826087"/>
         </scene>
     </scenes>
     <resources>
         <image name="connectTo" width="150" height="23"/>
-        <image name="plus.app.fill" catalog="system" width="64" height="56"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>

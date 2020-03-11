@@ -20,7 +20,6 @@ class StreakViewController: UIViewController {
     @IBOutlet weak var connectToFoursquareButton: UIButton!
     
     private let locationManager = CLLocationManager()
-    private let userDefaults = UserDefaults.standard
     private let clientId = K.clientId
     private let callback = K.callback // set or find it here - https://foursquare.com/developers/apps
     private var token: String?
@@ -29,8 +28,8 @@ class StreakViewController: UIViewController {
         super.viewDidLoad()
         locationManager.requestAlwaysAuthorization()
         
-        titleLabel.text = "👋 Welcome to GymStreak powered by Foursquare!"
         addGymButton.isHidden = true
+        titleLabel.text = "👋 Welcome to GymStreak powered by Foursquare!"
         timesLabel.isHidden = true
         visitCountLabel.isHidden  = true
         emojiLabel.isHidden = true
@@ -48,7 +47,6 @@ class StreakViewController: UIViewController {
         default:
             break
         }
-        
     }
     
     @IBAction func signInWithFoursquare(_ sender: Any) {
@@ -57,9 +55,10 @@ class StreakViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToGymSelection" {
-            if let vc = segue.destination as? GymsTableViewController {
-                vc.token = token
+        if let navVc = segue.destination as? UINavigationController {
+            if let destinationVc = navVc.viewControllers.first as? GymsTableViewController {
+                guard let token = token else { return }
+                destinationVc.geofenceManager = GeofenceManager(accessToken: token)
             }
         }
     }
@@ -68,10 +67,9 @@ class StreakViewController: UIViewController {
 extension StreakViewController: FSQAuthClientDelegate {
     func FSQAuthClientDidSucceed(accessToken: String) {
         token = accessToken
-        addGymButton.titleLabel?.text = "Add Gym"
+        addGymButton.isHidden = false
         titleLabel.text = "You've been to the gym"
         timesLabel.text = "times"
-        addGymButton.isHidden = false
         timesLabel.isHidden = false
         visitCountLabel.isHidden  = false
         emojiLabel.isHidden = false

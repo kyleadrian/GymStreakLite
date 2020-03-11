@@ -8,10 +8,8 @@
 
 import UIKit
 
-class GymsTableViewController: UITableViewController, GeofenceManagerDelegate {
-    
-    private var geofenceManager: GeofenceManager?
-    var token: String!
+class GymsTableViewController: UITableViewController {
+    var geofenceManager: GeofenceManager?
     
     let gymChains = [
         (name: "New York Sports Club", chainId: "55946538498e6a0fd536ca20"),
@@ -36,7 +34,11 @@ class GymsTableViewController: UITableViewController, GeofenceManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        geofenceManager = GeofenceManager(accessToken: token, delegate: self)
+        geofenceManager?.delegate = self
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,24 +46,26 @@ class GymsTableViewController: UITableViewController, GeofenceManagerDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifier = "Gym"
         let gym = gymChains[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Gym", for: indexPath)
         cell.textLabel?.text = gym.name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let gym = gymChains[indexPath.row]
-        geofenceManager?.createVenueGeofence(for: gym.chainId)
+        geofenceManager?.createVenueGeofence(for: gym)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    // Geofence Delegate
+}
+
+extension GymsTableViewController: GeofenceManagerDelegate {
     func didSucceed(status: String) {
         DispatchQueue.main.async {
             let ac = UIAlertController(title: "Gym Tracker", message: "\(status)", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                self.dismiss(animated: true)
+            }))
             self.present(ac, animated: true)
         }
     }
@@ -69,7 +73,7 @@ class GymsTableViewController: UITableViewController, GeofenceManagerDelegate {
     func didFail(error: String) {
         DispatchQueue.main.async {
             let ac = UIAlertController(title: "Gym Tracker", message: "\(error)", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(ac, animated: true)
         }
     }

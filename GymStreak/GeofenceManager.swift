@@ -17,16 +17,25 @@ protocol GeofenceManagerDelegate: AnyObject {
 class GeofenceManager {
     private var accessToken: String
     private var clientID = K.clientId
-    private weak var delegate: GeofenceManagerDelegate?
+    var delegate: GeofenceManagerDelegate?
     
-    init(accessToken: String, delegate: GeofenceManagerDelegate) {
+    init(accessToken: String) {
         self.accessToken = accessToken
-        self.delegate = delegate
     }
     
-    func createVenueGeofence(for chainId: String) {
-        let geofenceUrl = "https://api.foursquare.com/v2/apps/\(clientID)/geofences/add?v=20190224&oauth_token=\(accessToken)&name=MyGymGeofence&radius=100&chainId=\(chainId)&dwellTime=\(20)"
-        guard let url = URL(string: geofenceUrl) else { return }
+    func createVenueGeofence(for gym: (name: String, chainId: String)) {
+        var geofenceUrl = URLComponents(string: "https://api.foursquare.com")
+        geofenceUrl?.path = "/v2/apps/\(clientID)/geofences/add"
+        geofenceUrl?.queryItems = [
+            URLQueryItem(name: "v", value: "20190224"),
+            URLQueryItem(name: "oauth_token", value: accessToken),
+            URLQueryItem(name: "name", value: gym.name),
+            URLQueryItem(name: "radius", value: "100"),
+            URLQueryItem(name: "chainId", value: gym.chainId),
+            URLQueryItem(name: "dwellTime", value: "20")
+        ]
+        
+        guard let url = geofenceUrl?.url else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"

@@ -55,13 +55,11 @@ class FSQAuthViewController: UIViewController {
         _ = self.webview?.load(URLRequest(url: authURL))
     }
 
-// MARK: - Private methods
     @objc func cancel(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
 }
 
-// MARK: - WKWebView delegate
 extension FSQAuthViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let urlString = navigationAction.request.url?.absoluteString,
