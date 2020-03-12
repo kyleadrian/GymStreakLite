@@ -1,6 +1,8 @@
 # GymStreak
 Sample app that uses the Foursquare Geofencing API and Pilgrim SDK to help you keep track of how many times you've gone to the gym.
 
+![](demo.GIF)
+
 # Installation
 1) Sign up for a [Foursquare Developer Account](https://foursquare.com/developers/signup)
 2) Create an app
