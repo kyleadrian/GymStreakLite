@@ -16,10 +16,31 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>com.kyleawiltshire.GymStreakLite</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>gymstreaklite</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We require always-on your location to know if you are currently at your selected gym!</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We require always-on your location to know if you are currently at your selected gym!</string>
+	<key>NSLocationUsageDescription</key>
+	<string>We require always-on your location to know if you are currently at your selected gym!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We require always-on your location to know if you are currently at your selected gym!</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -64,13 +85,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>We require always-on your location to know if you are currently at your selected gym!</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We require always-on your location to know if you are currently at your selected gym!</string>
-	<key>NSLocationUsageDescription</key>
-	<string>We require always-on your location to know if you are currently at your selected gym!</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We require always-on your location to know if you are currently at your selected gym!</string>
 </dict>
 </plist>

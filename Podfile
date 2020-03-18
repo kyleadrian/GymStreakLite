@@ -6,5 +6,6 @@ target 'GymStreak' do
   use_frameworks!
 
 pod 'Pilgrim', '~> 2.2.1'
+pod 'FSOAuth', '~> 1.2.1'
 
 end

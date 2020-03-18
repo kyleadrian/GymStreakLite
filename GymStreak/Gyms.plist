@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>New York Sports Club</string>
+		<key>chainId</key>
+		<string>55946538498e6a0fd536ca20</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Crunch Fitness</string>
+		<key>chainId</key>
+		<string>556a2e68a7c8957d73d41de7</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Equinox</string>
+		<key>chainId</key>
+		<string>556a28f8a7c8957d73d37328</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Blink Fitness</string>
+		<key>chainId</key>
+		<string>556e56debd6a82902e28b74c</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>24 Hour Fitness</string>
+		<key>chainId</key>
+		<string>556ce426aceaff43eb04e8a0</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Planet Fitness</string>
+		<key>chainId</key>
+		<string>556d0900aceaff43eb07f9d2</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>YMCA</string>
+		<key>chainId</key>
+		<string>5568ecb3a7c8a9cf8ec391f1</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>CYC Fitness</string>
+		<key>chainId</key>
+		<string>5568ecd3a7c8a9cf8ec393d8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>exhale</string>
+		<key>chainId</key>
+		<string>5568f419a7c8a9cf8ec4837c</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>SoulCycle</string>
+		<key>chainId</key>
+		<string>5569f2cca7c8896abe7c4805</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Retro Fitness</string>
+		<key>chainId</key>
+		<string>556a29ada7c8957d73d38580</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>In-Shape</string>
+		<key>chainId</key>
+		<string>556a2a42a7c8957d73d397c8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Orange Theory Fitness</string>
+		<key>chainId</key>
+		<string>556e5adcbd6a82902e2942a9</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Weight Watchers</string>
+		<key>chainId</key>
+		<string>5900a4d306fb602077776630</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Barry&apos;s Bootcamp</string>
+		<key>chainId</key>
+		<string>5a95bb1895da0c40425406dc</string>
+	</dict>
+</array>
+</plist>

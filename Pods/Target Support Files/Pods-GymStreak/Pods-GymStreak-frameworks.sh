@@ -161,10 +161,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/FSOAuth/FSOAuth.framework"
   install_framework "${PODS_ROOT}/Pilgrim/Pilgrim-2.2.1/Pilgrim.framework"
   install_dsym "${PODS_ROOT}/Pilgrim/Pilgrim-2.2.1/Pilgrim.framework.dSYM"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/FSOAuth/FSOAuth.framework"
   install_framework "${PODS_ROOT}/Pilgrim/Pilgrim-2.2.1/Pilgrim.framework"
   install_dsym "${PODS_ROOT}/Pilgrim/Pilgrim-2.2.1/Pilgrim.framework.dSYM"
 fi

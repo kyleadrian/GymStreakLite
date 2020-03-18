@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,13 +19,25 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3D98E39C70BE78FD55D93E64D3BD5BEF /* Pods-GymStreak-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA47300BC52BCCF9D1D17B1C5F75E67 /* Pods-GymStreak-dummy.m */; };
-		516ACB917AEB6DA0FB5D3C7F0869058F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		71C45393E2ED815C50EE18AE63E742D3 /* Pods-GymStreak-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95CA9D9B28852CB6EC211D0CA8DF332F /* Pods-GymStreak-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FCCD9667C7CB8B7225B1E2D768A9523 /* FSOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAB10E1A7E30DC0459603373F224A33 /* FSOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6987345513A08CFD6D1B97FDE70E33DF /* Pods-GymStreak-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA47300BC52BCCF9D1D17B1C5F75E67 /* Pods-GymStreak-dummy.m */; };
+		7959E9FEE73967306B055DB37F3A7365 /* FSOAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1CA6E174BF87730B71358328712799 /* FSOAuth-dummy.m */; };
+		8B244360602DF2EADF823304105CBBE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A289C72F16F85A670F16D8EBE6BB6958 /* Pods-GymStreak-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95CA9D9B28852CB6EC211D0CA8DF332F /* Pods-GymStreak-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDC2C599BA7794F21041F57C8B778759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DC28E0569C25E81ED56E9F71B3AD6B84 /* FSOAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 780B977F2D3B1C862F11EE419E73A801 /* FSOAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F188A707FA2EFE5464784651922CDE3F /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0116B999A27BCDD2FB2C6C2F2EA0D /* FSOAuth.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AED08E95A5679224111AE37090B41D8C /* PBXContainerItemProxy */ = {
+		64AFADFDCB52A52FE39A802C7ECC6423 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC1DD57C17F14256D230CD023F45C974;
+			remoteInfo = FSOAuth;
+		};
+		89EBBBBBD8BC60C82EDCFCA7AD4796E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,67 +47,99 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B1CA6E174BF87730B71358328712799 /* FSOAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSOAuth-dummy.m"; sourceTree = "<group>"; };
 		1CA47300BC52BCCF9D1D17B1C5F75E67 /* Pods-GymStreak-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GymStreak-dummy.m"; sourceTree = "<group>"; };
+		1FB0116B999A27BCDD2FB2C6C2F2EA0D /* FSOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
 		2D0185CE97F5916CB1BD87480A4E9252 /* Pods-GymStreak-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GymStreak-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2DAB10E1A7E30DC0459603373F224A33 /* FSOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSOAuth.h; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		424E09740A9E460A2BF9DDE4EB92535B /* FSOAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSOAuth.modulemap; sourceTree = "<group>"; };
+		42C75319C3147BEFD5FFB6B38DB213DA /* Pilgrim.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pilgrim.xcconfig; sourceTree = "<group>"; };
 		50EC1747F11B911C36DA8D7E01C8F749 /* Pods-GymStreak.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GymStreak.modulemap"; sourceTree = "<group>"; };
 		621DACB4CBA29BCE3681CCCADB89524E /* Pods-GymStreak-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymStreak-acknowledgements.plist"; sourceTree = "<group>"; };
+		6ED5C11E919E7A7DC813202CCEF04E01 /* FSOAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSOAuth-Info.plist"; sourceTree = "<group>"; };
+		780B977F2D3B1C862F11EE419E73A801 /* FSOAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSOAuth-umbrella.h"; sourceTree = "<group>"; };
 		806C8D784A36F21A476976E02873E72A /* Pods-GymStreak-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymStreak-Info.plist"; sourceTree = "<group>"; };
-		93BBFD96633AC13CE9C703A564A647D3 /* Pilgrim.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pilgrim.framework; path = "Pilgrim-2.2.1/Pilgrim.framework"; sourceTree = "<group>"; };
 		945FAE7FE5A7DD6CACBA7ADD5AD68AED /* Pods-GymStreak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymStreak.debug.xcconfig"; sourceTree = "<group>"; };
 		95CA9D9B28852CB6EC211D0CA8DF332F /* Pods-GymStreak-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GymStreak-umbrella.h"; sourceTree = "<group>"; };
 		9783F0CBAE540E198C0B518C7D42B1BE /* Pods-GymStreak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymStreak.release.xcconfig"; sourceTree = "<group>"; };
+		9838F3DCA2C6D40EE8B19B8070101E24 /* FSOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSOAuth.framework; path = FSOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B3D67FA96A69EBF3C58BC6843B21964B /* Pilgrim.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pilgrim.xcconfig; sourceTree = "<group>"; };
+		AECED6F4D771A8151B10BED37E9635D2 /* FSOAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSOAuth.xcconfig; sourceTree = "<group>"; };
+		B0C7A6214C3BFF66266EDE0926263436 /* Pilgrim.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pilgrim.framework; path = "Pilgrim-2.2.1/Pilgrim.framework"; sourceTree = "<group>"; };
+		C8606384E37FBB17DCE3FB33DC51E30A /* FSOAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSOAuth-prefix.pch"; sourceTree = "<group>"; };
 		D6FD8D19A0A52961215271F23399015F /* Pods-GymStreak-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymStreak-frameworks.sh"; sourceTree = "<group>"; };
 		E5C7887ECC752C929A2FA5A7884DAE0A /* Pods_GymStreak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GymStreak.framework; path = "Pods-GymStreak.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B36BDFBBB56044D6931B04EAB049D24 /* Frameworks */ = {
+		6202823BEF53688F8934F0C9FE1D0B3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516ACB917AEB6DA0FB5D3C7F0869058F /* Foundation.framework in Frameworks */,
+				8B244360602DF2EADF823304105CBBE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52BFD4BC614A767C0A64BC461B61D0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC2C599BA7794F21041F57C8B778759 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C6C905B5FC1C002D31A1C8EB718BDE5 /* Frameworks */ = {
+		22A30C0221FE1B45018255AE792629E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93BBFD96633AC13CE9C703A564A647D3 /* Pilgrim.framework */,
+				CE938C092E1A815EAD2CBD801A127347 /* FSOAuth */,
+				45C13890704FDDE6D67B3188573E597B /* Pilgrim */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		45C13890704FDDE6D67B3188573E597B /* Pilgrim */ = {
+			isa = PBXGroup;
+			children = (
+				602EF749FF9AF28F6CC9590B98AEB729 /* Frameworks */,
+				F177485FF676455AE28327F54AC2CE1C /* Support Files */,
+			);
+			name = Pilgrim;
+			path = Pilgrim;
+			sourceTree = "<group>";
+		};
+		602EF749FF9AF28F6CC9590B98AEB729 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0C7A6214C3BFF66266EDE0926263436 /* Pilgrim.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		87A52B281F245E9D611B7DE1AF30409F /* Support Files */ = {
+		979074F067F6FFCBA03DC0D9795113F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3D67FA96A69EBF3C58BC6843B21964B /* Pilgrim.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pilgrim";
-			sourceTree = "<group>";
-		};
-		989A9E2928482544C995A05D9A3C9D9E /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				9838F3DCA2C6D40EE8B19B8070101E24 /* FSOAuth.framework */,
 				E5C7887ECC752C929A2FA5A7884DAE0A /* Pods_GymStreak.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9EBABEB1DC50D574D7A5818B5D66F0BF /* Pilgrim */ = {
+		9AD1AD1E684FAB242A674DC288FCD4D6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C6C905B5FC1C002D31A1C8EB718BDE5 /* Frameworks */,
-				87A52B281F245E9D611B7DE1AF30409F /* Support Files */,
+				424E09740A9E460A2BF9DDE4EB92535B /* FSOAuth.modulemap */,
+				AECED6F4D771A8151B10BED37E9635D2 /* FSOAuth.xcconfig */,
+				0B1CA6E174BF87730B71358328712799 /* FSOAuth-dummy.m */,
+				6ED5C11E919E7A7DC813202CCEF04E01 /* FSOAuth-Info.plist */,
+				C8606384E37FBB17DCE3FB33DC51E30A /* FSOAuth-prefix.pch */,
+				780B977F2D3B1C862F11EE419E73A801 /* FSOAuth-umbrella.h */,
 			);
-			name = Pilgrim;
-			path = Pilgrim;
+			name = "Support Files";
+			path = "../Target Support Files/FSOAuth";
 			sourceTree = "<group>";
 		};
 		B8DE712BC37976A24D00147A777716F7 /* Pods-GymStreak */ = {
@@ -123,12 +167,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CA489F540A08902C1068BAE6C8CC76C2 /* Pods */ = {
+		CE938C092E1A815EAD2CBD801A127347 /* FSOAuth */ = {
 			isa = PBXGroup;
 			children = (
-				9EBABEB1DC50D574D7A5818B5D66F0BF /* Pilgrim */,
+				2DAB10E1A7E30DC0459603373F224A33 /* FSOAuth.h */,
+				1FB0116B999A27BCDD2FB2C6C2F2EA0D /* FSOAuth.m */,
+				9AD1AD1E684FAB242A674DC288FCD4D6 /* Support Files */,
 			);
-			name = Pods;
+			name = FSOAuth;
+			path = FSOAuth;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -136,8 +183,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				CA489F540A08902C1068BAE6C8CC76C2 /* Pods */,
-				989A9E2928482544C995A05D9A3C9D9E /* Products */,
+				22A30C0221FE1B45018255AE792629E1 /* Pods */,
+				979074F067F6FFCBA03DC0D9795113F9 /* Products */,
 				F1C117564F88CF23E881FEE9EF57AE69 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +195,15 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F177485FF676455AE28327F54AC2CE1C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42C75319C3147BEFD5FFB6B38DB213DA /* Pilgrim.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pilgrim";
 			sourceTree = "<group>";
 		};
 		F1C117564F88CF23E881FEE9EF57AE69 /* Targets Support Files */ = {
@@ -161,11 +217,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		949ED3AF62383E594716B1A82C3E8653 /* Headers */ = {
+		0377804EAEDA2F25DBF3324F5426C140 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71C45393E2ED815C50EE18AE63E742D3 /* Pods-GymStreak-umbrella.h in Headers */,
+				DC28E0569C25E81ED56E9F71B3AD6B84 /* FSOAuth-umbrella.h in Headers */,
+				3FCCD9667C7CB8B7225B1E2D768A9523 /* FSOAuth.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D9938338D27CB90E93337266554144 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A289C72F16F85A670F16D8EBE6BB6958 /* Pods-GymStreak-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,21 +239,40 @@
 /* Begin PBXNativeTarget section */
 		983D45149EF2DEC6193C9EFF7B52FC68 /* Pods-GymStreak */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C235FD5C70170619BC2B1CD67B861B5F /* Build configuration list for PBXNativeTarget "Pods-GymStreak" */;
+			buildConfigurationList = 026F16E94D21533068C5E8459D02C288 /* Build configuration list for PBXNativeTarget "Pods-GymStreak" */;
 			buildPhases = (
-				949ED3AF62383E594716B1A82C3E8653 /* Headers */,
-				863F074279D8242ED041D5499CC20B73 /* Sources */,
-				7B36BDFBBB56044D6931B04EAB049D24 /* Frameworks */,
-				B2D7AE3E0686CF09740C4B337C00F169 /* Resources */,
+				79D9938338D27CB90E93337266554144 /* Headers */,
+				E74D91BE5DB0D1C54E78D68DAFA5CA4E /* Sources */,
+				A52BFD4BC614A767C0A64BC461B61D0B /* Frameworks */,
+				0499822AD91B7B984C3D23978FB4D83E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ECF6189B44469CFEEEBC903BA05CEF38 /* PBXTargetDependency */,
+				041911C9A0986CE5C5E9030A8D5A3D36 /* PBXTargetDependency */,
+				9B63CF8CF348623242B73713F2EE881C /* PBXTargetDependency */,
 			);
 			name = "Pods-GymStreak";
 			productName = "Pods-GymStreak";
 			productReference = E5C7887ECC752C929A2FA5A7884DAE0A /* Pods_GymStreak.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC1DD57C17F14256D230CD023F45C974 /* FSOAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F313B525E0778DB58EE5B2E86320189 /* Build configuration list for PBXNativeTarget "FSOAuth" */;
+			buildPhases = (
+				0377804EAEDA2F25DBF3324F5426C140 /* Headers */,
+				B0A7800801435F45E92C79AC29B75ECE /* Sources */,
+				6202823BEF53688F8934F0C9FE1D0B3C /* Frameworks */,
+				B4039B808EECCDF3268FAAAAC349EF0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSOAuth;
+			productName = FSOAuth;
+			productReference = 9838F3DCA2C6D40EE8B19B8070101E24 /* FSOAuth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -201,7 +285,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -209,10 +293,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 989A9E2928482544C995A05D9A3C9D9E /* Products */;
+			productRefGroup = 979074F067F6FFCBA03DC0D9795113F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BC1DD57C17F14256D230CD023F45C974 /* FSOAuth */,
 				BD6E6D8015F43EA43ABC4DCEDB0A26DB /* Pilgrim */,
 				983D45149EF2DEC6193C9EFF7B52FC68 /* Pods-GymStreak */,
 			);
@@ -220,7 +305,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B2D7AE3E0686CF09740C4B337C00F169 /* Resources */ = {
+		0499822AD91B7B984C3D23978FB4D83E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4039B808EECCDF3268FAAAAC349EF0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,27 +322,102 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		863F074279D8242ED041D5499CC20B73 /* Sources */ = {
+		B0A7800801435F45E92C79AC29B75ECE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D98E39C70BE78FD55D93E64D3BD5BEF /* Pods-GymStreak-dummy.m in Sources */,
+				7959E9FEE73967306B055DB37F3A7365 /* FSOAuth-dummy.m in Sources */,
+				F188A707FA2EFE5464784651922CDE3F /* FSOAuth.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74D91BE5DB0D1C54E78D68DAFA5CA4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6987345513A08CFD6D1B97FDE70E33DF /* Pods-GymStreak-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ECF6189B44469CFEEEBC903BA05CEF38 /* PBXTargetDependency */ = {
+		041911C9A0986CE5C5E9030A8D5A3D36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSOAuth;
+			target = BC1DD57C17F14256D230CD023F45C974 /* FSOAuth */;
+			targetProxy = 64AFADFDCB52A52FE39A802C7ECC6423 /* PBXContainerItemProxy */;
+		};
+		9B63CF8CF348623242B73713F2EE881C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Pilgrim;
 			target = BD6E6D8015F43EA43ABC4DCEDB0A26DB /* Pilgrim */;
-			targetProxy = AED08E95A5679224111AE37090B41D8C /* PBXContainerItemProxy */;
+			targetProxy = 89EBBBBBD8BC60C82EDCFCA7AD4796E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4724618F96D9D447F2080209DAA71A82 /* Debug */ = {
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		34F0418BD6931EE7B1E4AEBB8DC5401B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 945FAE7FE5A7DD6CACBA7ADD5AD68AED /* Pods-GymStreak.debug.xcconfig */;
 			buildSettings = {
@@ -267,7 +434,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GymStreak/Pods-GymStreak-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +457,7 @@
 		};
 		6BDEBB2CDE6D7AA2FD2C2E78AD1DD699 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3D67FA96A69EBF3C58BC6843B21964B /* Pilgrim.xcconfig */;
+			baseConfigurationReference = 42C75319C3147BEFD5FFB6B38DB213DA /* Pilgrim.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -305,7 +472,97 @@
 			};
 			name = Release;
 		};
-		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+		A2B8E42701800ED6D3D310A950FCB297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECED6F4D771A8151B10BED37E9635D2 /* FSOAuth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSOAuth/FSOAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSOAuth/FSOAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FSOAuth/FSOAuth.modulemap";
+				PRODUCT_MODULE_NAME = FSOAuth;
+				PRODUCT_NAME = FSOAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5632E638124F3C63C290AA0ED552400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C75319C3147BEFD5FFB6B38DB213DA /* Pilgrim.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9F34BEECB849FD5E4EC199D76B0CDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9783F0CBAE540E198C0B518C7D42B1BE /* Pods-GymStreak.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GymStreak/Pods-GymStreak-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymStreak/Pods-GymStreak.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -356,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -369,12 +626,10 @@
 			};
 			name = Debug;
 		};
-		D234043069B5EC91870698882C11CF8B /* Release */ = {
+		F5D71B141893BF49F525079BB0304E43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9783F0CBAE540E198C0B518C7D42B1BE /* Pods-GymStreak.release.xcconfig */;
+			baseConfigurationReference = AECED6F4D771A8151B10BED37E9635D2 /* FSOAuth.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -384,23 +639,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GymStreak/Pods-GymStreak-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FSOAuth/FSOAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSOAuth/FSOAuth-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GymStreak/Pods-GymStreak.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/FSOAuth/FSOAuth.modulemap";
+				PRODUCT_MODULE_NAME = FSOAuth;
+				PRODUCT_NAME = FSOAuth;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -408,99 +662,32 @@
 			};
 			name = Release;
 		};
-		E5632E638124F3C63C290AA0ED552400 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3D67FA96A69EBF3C58BC6843B21964B /* Pilgrim.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		026F16E94D21533068C5E8459D02C288 /* Build configuration list for PBXNativeTarget "Pods-GymStreak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
-				ECB437504DF805BD96CAABF97400B526 /* Release */,
+				34F0418BD6931EE7B1E4AEBB8DC5401B /* Debug */,
+				E9F34BEECB849FD5E4EC199D76B0CDE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C235FD5C70170619BC2B1CD67B861B5F /* Build configuration list for PBXNativeTarget "Pods-GymStreak" */ = {
+		2F313B525E0778DB58EE5B2E86320189 /* Build configuration list for PBXNativeTarget "FSOAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4724618F96D9D447F2080209DAA71A82 /* Debug */,
-				D234043069B5EC91870698882C11CF8B /* Release */,
+				A2B8E42701800ED6D3D310A950FCB297 /* Debug */,
+				F5D71B141893BF49F525079BB0304E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681DFDF024227C65009AE0C1 /* Gyms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 681DFDEF24227C65009AE0C1 /* Gyms.plist */; };
 		68F453092418289000CE11E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F453082418289000CE11E6 /* AppDelegate.swift */; };
 		68F4530B2418289000CE11E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F4530A2418289000CE11E6 /* SceneDelegate.swift */; };
 		68F453152418289000CE11E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F453132418289000CE11E6 /* LaunchScreen.storyboard */; };
@@ -14,10 +15,8 @@
 		68F453252418291600CE11E6 /* StreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F4531E2418291600CE11E6 /* StreakViewController.swift */; };
 		68F453262418291600CE11E6 /* GymsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F4531F2418291600CE11E6 /* GymsTableViewController.swift */; };
 		68F453272418291600CE11E6 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F453202418291600CE11E6 /* K.swift */; };
-		68F453282418291600CE11E6 /* FSQAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F453212418291600CE11E6 /* FSQAuthClient.swift */; };
 		68F453292418291600CE11E6 /* GeofenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F453222418291600CE11E6 /* GeofenceModel.swift */; };
 		68F4532A2418291600CE11E6 /* GeofenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F453232418291600CE11E6 /* GeofenceManager.swift */; };
-		68F4532B2418291600CE11E6 /* FSQAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F453242418291600CE11E6 /* FSQAuthViewController.swift */; };
 		68F4532D2418292600CE11E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F4532C2418292600CE11E6 /* Assets.xcassets */; };
 		C72907818D03B342CD046999 /* Pods_GymStreak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C689D8AACAE6C2474B4DF1FF /* Pods_GymStreak.framework */; };
 /* End PBXBuildFile section */
@@ -25,6 +24,7 @@
 /* Begin PBXFileReference section */
 		07F9E1FCE57BFE7F57602B77 /* Pods-GymStreak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymStreak.release.xcconfig"; path = "Target Support Files/Pods-GymStreak/Pods-GymStreak.release.xcconfig"; sourceTree = "<group>"; };
 		22F9F488A1C428F86BB17000 /* Pods-GymStreak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymStreak.debug.xcconfig"; path = "Target Support Files/Pods-GymStreak/Pods-GymStreak.debug.xcconfig"; sourceTree = "<group>"; };
+		681DFDEF24227C65009AE0C1 /* Gyms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Gyms.plist; sourceTree = "<group>"; };
 		68F453052418289000CE11E6 /* GymStreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymStreak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F453082418289000CE11E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68F4530A2418289000CE11E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,10 +33,8 @@
 		68F4531E2418291600CE11E6 /* StreakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreakViewController.swift; sourceTree = "<group>"; };
 		68F4531F2418291600CE11E6 /* GymsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymsTableViewController.swift; sourceTree = "<group>"; };
 		68F453202418291600CE11E6 /* K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
-		68F453212418291600CE11E6 /* FSQAuthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSQAuthClient.swift; sourceTree = "<group>"; };
 		68F453222418291600CE11E6 /* GeofenceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceModel.swift; sourceTree = "<group>"; };
 		68F453232418291600CE11E6 /* GeofenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceManager.swift; sourceTree = "<group>"; };
-		68F453242418291600CE11E6 /* FSQAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSQAuthViewController.swift; sourceTree = "<group>"; };
 		68F4532C2418292600CE11E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68F4532E2418294500CE11E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C689D8AACAE6C2474B4DF1FF /* Pods_GymStreak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymStreak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,17 +92,16 @@
 			children = (
 				68F453082418289000CE11E6 /* AppDelegate.swift */,
 				68F4530A2418289000CE11E6 /* SceneDelegate.swift */,
-				68F453212418291600CE11E6 /* FSQAuthClient.swift */,
-				68F453242418291600CE11E6 /* FSQAuthViewController.swift */,
-				68F453232418291600CE11E6 /* GeofenceManager.swift */,
 				68F453222418291600CE11E6 /* GeofenceModel.swift */,
+				68F453232418291600CE11E6 /* GeofenceManager.swift */,
+				68F4531E2418291600CE11E6 /* StreakViewController.swift */,
 				68F4531F2418291600CE11E6 /* GymsTableViewController.swift */,
 				68F453202418291600CE11E6 /* K.swift */,
-				68F4531E2418291600CE11E6 /* StreakViewController.swift */,
 				68F4531C2418290200CE11E6 /* Main.storyboard */,
 				68F453132418289000CE11E6 /* LaunchScreen.storyboard */,
 				68F4532C2418292600CE11E6 /* Assets.xcassets */,
 				68F4532E2418294500CE11E6 /* Info.plist */,
+				681DFDEF24227C65009AE0C1 /* Gyms.plist */,
 			);
 			path = GymStreak;
 			sourceTree = "<group>";
@@ -169,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681DFDF024227C65009AE0C1 /* Gyms.plist in Resources */,
 				68F4531D2418290200CE11E6 /* Main.storyboard in Resources */,
 				68F4532D2418292600CE11E6 /* Assets.xcassets in Resources */,
 				68F453152418289000CE11E6 /* LaunchScreen.storyboard in Resources */,
@@ -228,11 +226,9 @@
 				68F453272418291600CE11E6 /* K.swift in Sources */,
 				68F453292418291600CE11E6 /* GeofenceModel.swift in Sources */,
 				68F453252418291600CE11E6 /* StreakViewController.swift in Sources */,
-				68F453282418291600CE11E6 /* FSQAuthClient.swift in Sources */,
 				68F4530B2418289000CE11E6 /* SceneDelegate.swift in Sources */,
 				68F453262418291600CE11E6 /* GymsTableViewController.swift in Sources */,
 				68F4532A2418291600CE11E6 /* GeofenceManager.swift in Sources */,
-				68F4532B2418291600CE11E6 /* FSQAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,14 +366,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66RS694SL6;
+				DEVELOPMENT_TEAM = Q5ZTRMHC85;
 				INFOPLIST_FILE = GymStreak/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyleawiltshire.GymStreak;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyleawiltshire.GymStreakLite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -390,14 +386,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66RS694SL6;
+				DEVELOPMENT_TEAM = Q5ZTRMHC85;
 				INFOPLIST_FILE = GymStreak/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyleawiltshire.GymStreak;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyleawiltshire.GymStreakLite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

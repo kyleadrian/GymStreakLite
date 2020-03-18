@@ -6,40 +6,30 @@
 //  Copyright © 2020 Kyle Wiltshire. All rights reserved.
 //
 
-import UIKit
-
-import UIKit
 import Pilgrim
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, PilgrimManagerDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        PilgrimManager.shared().configure(withConsumerKey: K.clientId, secret: K.clientSecret, delegate: self, completion: nil)
-        PilgrimManager.shared().start()
-        return true
-    }
+  
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    // MARK: UISceneSession Lifecycle
-    
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    PilgrimManager.shared().configure(withConsumerKey: K.clientId, secret: K.clientSecret, delegate: self, completion: nil)
+    PilgrimManager.shared().start()
+    return true
+  }
+  
+  func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
+  }
+  
+  func pilgrimManager(_ pilgrimManager: PilgrimManager, handle geofenceEvents: [GeofenceEvent]) {
+    for event in geofenceEvents {
+      if event.eventType == .dwell {
+        let workoutCount = UserDefaults.standard.integer(forKey: "workoutCount")
+        workoutCount == 0 ? UserDefaults.standard.set(1, forKey: "workoutCount") : UserDefaults.standard.set(workoutCount + 1, forKey: "workoutCount")
+      }
     }
-    
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-    }
-    
-    func pilgrimManager(_ pilgrimManager: PilgrimManager, handle visit: Visit) {
-    }
-    
-    func pilgrimManager(_ pilgrimManager: PilgrimManager, handle geofenceEvents: [GeofenceEvent]) {
-        for event in geofenceEvents {
-            if event.eventType == .dwell {
-                let visitCount = UserDefaults.standard.integer(forKey: "visitCount")
-                visitCount == 0 ? UserDefaults.standard.set(1, forKey: "visitCount") : UserDefaults.standard.set(visitCount + 1, forKey: "visitCount")
-            }
-        }
-    }
+  }
+  
 }
 
 

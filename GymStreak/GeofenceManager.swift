@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 protocol GeofenceManagerDelegate: AnyObject {
     func didSucceed(status: String)
@@ -23,7 +22,7 @@ class GeofenceManager {
         self.accessToken = accessToken
     }
     
-    func createVenueGeofence(for gym: (name: String, chainId: String)) {
+    func createVenueGeofence(for gym: Gym) {
         var geofenceUrl = URLComponents(string: "https://api.foursquare.com")
         geofenceUrl?.path = "/v2/apps/\(clientID)/geofences/add"
         geofenceUrl?.queryItems = [
@@ -42,12 +41,12 @@ class GeofenceManager {
         
         URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
             if let data = data {
-                let apiResponse = try? JSONDecoder().decode(Welcome.self, from: data)
+                let apiResponse = try? JSONDecoder().decode(GeofenceModel.self, from: data)
                 guard let statusCode = apiResponse?.meta?.code else { return }
-                if (200...299).contains(statusCode) {
+                if statusCode == 200 {
                     self?.delegate?.didSucceed(status: "Success")
                 } else {
-                    self?.delegate?.didFail(error: "\(apiResponse?.meta?.errorDetail ?? "")")
+                    self?.delegate?.didFail(error: "\(apiResponse?.meta?.errorDetail ?? "Unknown Error. Please try again later.")")
                 }
             }
         }.resume()

@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-GymStreak/Pods-GymStreak-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FSOAuth/FSOAuth.framework
 ${PODS_ROOT}/Pilgrim/Pilgrim-2.2.1/Pilgrim.framework
 ${PODS_ROOT}/Pilgrim/Pilgrim-2.2.1/Pilgrim.framework.dSYM

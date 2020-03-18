@@ -1,16 +1,20 @@
 PODS:
+  - FSOAuth (1.2.1)
   - Pilgrim (2.2.1)
 
 DEPENDENCIES:
+  - FSOAuth (~> 1.2.1)
   - Pilgrim (~> 2.2.1)
 
 SPEC REPOS:
   trunk:
+    - FSOAuth
     - Pilgrim
 
 SPEC CHECKSUMS:
+  FSOAuth: abf5dc97e90d1da4cb6e04305653998088a223b3
   Pilgrim: 2405ca56c45cf185f45d80663aa9edeeaeaa780e
 
-PODFILE CHECKSUM: aed3005ece7625c6c5a93fb1bfaab6f364bd39b7
+PODFILE CHECKSUM: ae9bb9a2895f025eb4e5a94df11ee10abe5207fe
 
 COCOAPODS: 1.8.4
